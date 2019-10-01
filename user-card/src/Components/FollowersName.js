@@ -3,10 +3,13 @@ import styled from "styled-components";
 
 export default class FollowerCard extends React.Component {
   render() {
-  
+    console.log(this.props);
     return (
       <FollowersCards>
-        <img src={this.props.followerData.avatar_url} alt="Pictures of followers" />
+        <img
+          src={this.props.followerData.avatar_url}
+          alt="Pictures of followers"
+        />
         <h3>{this.props.followerData.login}</h3>
       </FollowersCards>
     );
@@ -27,8 +30,15 @@ const FollowersCards = styled.div`
   img {
     width: 150px;
     height: 150px;
-    border-radius: 3px;
+    border-radius: 50%;
     margin-right: 20px;
+    opacity: 0.7;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    :hover {
+      height: 180px;
+      opacity: 1;
+    }
   }
   h3 {
     font-size: 1.4rem;

@@ -36,7 +36,7 @@ const UserCards = styled.div`
   }
   img {
     width: 40%;
-    border-radius: 3px;
+    border-radius: 5px 5px 0 0;
     margin-right: 20px;
   }
   h3{
