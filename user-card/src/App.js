@@ -50,4 +50,5 @@ const ContainerStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
 `;
