@@ -10,10 +10,10 @@ export default class User extends React.Component {
   render() {
     return (
       <UserCards>
-        <p>{this.props.user.name}</p>
-        <p>{this.props.user.login}</p>
+        <h3>{this.props.user.name}</h3>
+        <h3>{this.props.user.login}</h3>
         <img src={this.props.user.avatar_url} alt="Tolu" />
-        <p>No of Followers: {this.props.user.followers}</p>
+        <h3>No of Followers: {this.props.user.followers}</h3>
       </UserCards>
     );
   }
@@ -31,12 +31,16 @@ const UserCards = styled.div`
   background-color: #fff;
   margin-bottom: 30px;
   height:auto;
+  :hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
   img {
     width: 40%;
     border-radius: 3px;
     margin-right: 20px;
   }
-  p{
+  h3{
     font-size: 1.4rem;
+
   }
 `;

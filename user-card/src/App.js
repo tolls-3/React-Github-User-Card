@@ -3,7 +3,7 @@ import axios from "axios";
 import User from "./Components/User";
 import FollowersList from "./Components/FollowersList";
 import styled from 'styled-components'
-
+import '../src/App.css'
 const usersApi = "https://api.github.com/users/tolls-3";
 // const options = {
 //   headers: { Authorization: "7c4321c5bf19dd2fb3f367648a9a1b7c391a6ba4" }
